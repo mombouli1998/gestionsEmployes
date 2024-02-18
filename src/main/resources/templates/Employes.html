@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+<html xmlns:th="http://www.thymeleaf.org" >
+    <head>
+        <title>Employes</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       
+      <style>
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even){background-color: #f2f2f2}
+
+th {
+  background-color: #04AA6D;
+  color: white;
+}
+a:link, a:visited {
+  background-color: #f44336;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover, a:active {
+  background-color: red;
+}
+</style>
+    </head>
+    <body>
+        <div>
+            <a class="add" th:href="@{/Employes/new}">Ajout d'employé</a>
+        </div>
+        <div> <h2>Listes d'employées</h2></div>
+        <div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nom</th>
+                        <th>Prénom</th>
+                        <th>Adress-mail</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr th:each=" employe: ${Employes}">
+                        <td th:text="${employe.nom}"></td>
+                         <td th:text="${employe.prenom}"></td>
+                          <td th:text="${employe.email}"></td>
+                          <td>
+                            <a th:href="@{/Employes/edit/{id}(id=${employe.id})}">Update</a>
+                          
+                            <a th:href="@{/Employes/{id}(id=${employe.id})}">Delete</a>
+                          </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </body>
+</html>
