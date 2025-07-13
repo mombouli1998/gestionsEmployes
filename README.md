@@ -1,14 +1,14 @@
 # 🎓 Application de Gestion d'Employés
 
-Cette application web permet de gérer une liste d’admis (étudiants ou employés) en utilisant **Spring Boot**, **Thymeleaf** et une base de données **MySQL**.
+Cette application web permet de gérer une liste d’employés (étudiants ou employés) en utilisant **Spring Boot**, **Thymeleaf** et une base de données **MySQL**.
 
 ## 📌 Objectif
 
 L'application offre une interface simple permettant :
 - D’ajouter un admis
-- De modifier les informations d’un admis
-- De supprimer un admis
-- De lister tous les admis
+- De modifier les informations d’un employés
+- De supprimer un employés
+- De lister tous les employés
 
 ---
 
@@ -45,9 +45,9 @@ L'application offre une interface simple permettant :
 
 | Fonction                | Description                                      |
 |------------------------|--------------------------------------------------|
-| 🔍 Lister               | Afficher tous les admis                         |
-| ➕ Ajouter              | Formulaire pour ajouter un nouvel admis         |
-| 🖊️ Modifier            | Formulaire pour modifier les données d’un admis |
+| 🔍 Lister               | Afficher tous les employés                        |
+| ➕ Ajouter              | Formulaire pour ajouter un nouvel employés         |
+| 🖊️ Modifier            | Formulaire pour modifier les données d’un employés |
 | ❌ Supprimer            | Supprimer un admis via son ID                   |
 
 ---
@@ -56,12 +56,12 @@ L'application offre une interface simple permettant :
 
 | URL                    | Méthode | Vue Thymeleaf         | Action                        |
 |------------------------|---------|------------------------|-------------------------------|
-| `/Employes`            | GET     | Employes.html          | Lister tous les admis         |
+| `/Employes`            | GET     | Employes.html          | Lister tous les employés         |
 | `/Employes/new`        | GET     | New_Employe.html       | Formulaire de création        |
-| `/Employes`            | POST    | -                      | Sauvegarder un nouvel admis   |
+| `/Employes`            | POST    | -                      | Sauvegarder un nouvel employés   |
 | `/Employes/edit/{id}`  | GET     | Edite_Employe.html     | Formulaire d'édition          |
 | `/Employes/{id}`       | POST    | -                      | Enregistrer les modifications |
-| `/Employes/{id}`       | GET     | -                      | Supprimer un admis par ID     |
+| `/Employes/{id}`       | GET     | -                      | Supprimer un employés par ID     |
 
 ---
 
