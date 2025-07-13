@@ -28,10 +28,15 @@ L'application offre une interface simple permettant :
 
 # 📦 EmployeApplication
 ├── 📂 controller → Contrôleurs web (EmployeController.java)
+
 ├── 📂 model → Classe Employe (entité)
+
 ├── 📂 Repository → Interface JPA : EmployeRepository.java
+
 ├── 📂 Service → Interface EmployeService.java
+
 ├── 📂 serviceImpl → Implémentation EmployeServiceImpl.java
+
 
 
 ---
