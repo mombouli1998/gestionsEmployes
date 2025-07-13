@@ -1,4 +1,4 @@
-# 🎓 Application de Gestion des Admis
+# 🎓 Application de Gestion d'Employés
 
 Cette application web permet de gérer une liste d’admis (étudiants ou employés) en utilisant **Spring Boot**, **Thymeleaf** et une base de données **MySQL**.
 
